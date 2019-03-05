@@ -4,7 +4,7 @@ resource "docker_image" "image_id" {
     name = "pengbai/docker-supermario:latest"
 }
 
-# Inicia Container
+# Inicia Container 1
 resource "docker_container" "container_id" {
     name  = "supermario"
     image = "${docker_image.image_id.latest}"
